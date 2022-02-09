@@ -5,8 +5,8 @@ name: CI to Docker Hub
 # Controls when the workflow will run
 on:
   push:
-    branches: [ feature/node-web-app-2 ]
-
+    tags:
+      - "v*.*.*"
 jobs:
 
   build:
